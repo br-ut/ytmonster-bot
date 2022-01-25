@@ -2,17 +2,7 @@ $count = Read-Host "No of Subscriptions:"
 for($i=1;$i -le $count;$i++){
 sleep 20
 
-$wshell = New-Object -ComObject wscript.shell;
-$wshell.AppActivate('YTMonster® | Earn Credits - Google Chrome')
-Sleep 5
-$wshell.SendKeys('{F5}')
-
-sleep 30
-
-$wshell = New-Object -ComObject wscript.shell;
-$wshell.AppActivate('YTMonster® | Earn Credits - Google Chrome')
-Sleep 5
-$wshell.SendKeys('{PGUP}')
+sleep 20
 
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('YTMonster® | Earn Credits - Google Chrome')
@@ -22,10 +12,16 @@ $wshell.SendKeys('{PGUP}')
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('YTMonster® | Earn Credits - Google Chrome')
 Sleep 5
-$wshell.SendKeys('{PGDN}')
+$wshell.SendKeys('{PGUP}')
 
 sleep 5
 .\click_1.ps1
+
+$wshell = New-Object -ComObject wscript.shell;
+$wshell.AppActivate('YTMonster® | Earn Credits - Google Chrome')
+Sleep 3
+$wshell.SendKeys('{PGUP}')
+
 sleep 10
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('YTMonster® | Earn Credits - Google Chrome')
@@ -55,10 +51,6 @@ $wshell.AppActivate('YTMonster® | Earn Credits - Google Chrome')
 Sleep 3
 $wshell.SendKeys('{PGUP}')
 
-$wshell = New-Object -ComObject wscript.shell;
-$wshell.AppActivate('YTMonster® | Earn Credits - Google Chrome')
-Sleep 3
-$wshell.SendKeys('{PGDN}')
 Sleep 5
 .\click_1.ps1
 }
