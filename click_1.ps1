@@ -64,4 +64,4 @@ public static void LeftClickAtPoint(int x, int y)
 '@
 Add-Type -TypeDefinition $cSource -ReferencedAssemblies System.Windows.Forms,System.Drawing
 #Send a click at a specified point
-[Clicker]::LeftClickAtPoint(400,270)
+[Clicker]::LeftClickAtPoint(400,650)
